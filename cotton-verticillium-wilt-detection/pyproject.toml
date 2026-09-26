@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cotton-verticillium-wilt-detection"
+version = "1.0.0"
+description = "Early detection of cotton Verticillium wilt using multi-spectral satellite time-series and multi-view UAV aerial imagery with hybrid CNN-LSTM and Transformer architectures."
+authors = [
+    {name = "Agronomic AI Research Team", email = "research@cotton-ai.org"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.23.0",
+    "scipy>=1.10.0",
+    "pandas>=1.5.0",
+    "opencv-python-headless>=4.7.0",
+    "scikit-learn>=1.2.0",
+    "pyyaml>=6.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

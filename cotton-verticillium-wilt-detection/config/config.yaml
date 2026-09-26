@@ -1,0 +1,91 @@
+# Cotton Verticillium Wilt Detection & Early Warning System Configuration
+
+system:
+  project_name: "cotton-verticillium-wilt-detection"
+  random_seed: 42
+  device: "cuda" # or "mps" or "cpu"
+
+dataset:
+  satellite:
+    num_samples: 5200
+    sequence_length: 12          # 12 temporal observation revisits (every 5-7 days across phenological cycle)
+    raw_bands:
+      - "B02" # Blue (490 nm)
+      - "B03" # Green (560 nm)
+      - "B04" # Red (665 nm)
+      - "B05" # RedEdge 1 (705 nm)
+      - "B06" # RedEdge 2 (740 nm)
+      - "B07" # RedEdge 3 (783 nm)
+      - "B08" # NIR (842 nm)
+      - "B8A" # Narrow NIR (865 nm)
+      - "B11" # SWIR 1 (1610 nm)
+      - "B12" # SWIR 2 (2190 nm)
+    computed_indices:
+      - "NDVI"   # Normalized Difference Vegetation Index
+      - "NDRE"   # Normalized Difference Red Edge (sensitive to early chlorophyll loss)
+      - "GNDVI"  # Green NDVI
+      - "PSRI"   # Plant Senescence Reflectance Index (carotenoid accumulation)
+      - "CWSI"   # Canopy Water Stress Index (xylem vessel blockage signature)
+      - "OSAVI"  # Optimized Soil-Adjusted Vegetation Index
+    time_interval_days: 6
+  uav:
+    image_size: [224, 224]
+    channels: 3                  # High-res RGB / Multi-spectral orthophoto
+    views:
+      - "nadir"     # 0 degree vertical top-down
+      - "oblique_30" # 30 degree multi-view canopy profile
+      - "oblique_45" # 45 degree under-canopy leaf orientation
+    feature_matching: "ORB"      # ORB or SIFT for geometric alignment
+  classes:
+    0: "Healthy"
+    1: "Early-Stage Wilt (Pre-Visual)"
+    2: "Moderate Wilt"
+    3: "Severe Wilt"
+
+models:
+  cnn_backbone:
+    name: "multiscale_residual"
+    in_channels: 3
+    feature_dim: 256
+    dropout: 0.2
+  temporal_lstm:
+    input_dim: 16                # 10 raw bands + 6 spectral indices
+    hidden_dim: 128
+    num_layers: 2
+    bidirectional: true
+    dropout: 0.25
+  spatio_temporal_transformer:
+    d_model: 256
+    nhead: 8
+    num_encoder_layers: 4
+    dim_feedforward: 512
+    dropout: 0.15
+  multimodal_fusion:
+    fusion_type: "cross_attention_gated" # or "concat_linear"
+    fusion_dim: 256
+    num_classes: 4
+    regression_heads:
+      - "days_to_visual_symptom"
+      - "degradation_severity"
+
+training:
+  batch_size: 32
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  epochs: 40
+  early_stopping_patience: 8
+  loss:
+    focal_gamma: 2.0
+    focal_alpha: [0.15, 0.40, 0.25, 0.20] # Prioritize early-stage detection recall
+    lead_time_loss_weight: 0.5
+    severity_loss_weight: 0.3
+
+agronomic_impact:
+  early_detection_lead_days: 12   # AI detects wilt 12 days prior to human scouting
+  baseline_unmitigated_yield_loss_pct: 35.0
+  standard_scouting_yield_loss_pct: 26.0
+  early_intervention_yield_loss_pct: 7.0
+  yield_salvaged_pct: 28.0        # (35% unmitigated - 7% early intervention = 28% yield preserved)
+  average_cotton_yield_kg_ha: 2800
+  cotton_price_per_kg_usd: 1.85
+  targeted_spray_saving_pct: 64.0 # Reduction in pesticide volume via precision zoning

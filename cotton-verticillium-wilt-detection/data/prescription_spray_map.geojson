@@ -1,0 +1,491 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "crs": "urn:ogc:def:crs:OGC:1.3:CRS84",
+    "target_crop": "Gossypium hirsutum (Cotton)",
+    "pathogen": "Verticillium dahliae",
+    "generation_standard": "Variable-Rate Application (VRA) Prescription Map"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.751811,
+              33.163653
+            ],
+            [
+              -101.750911,
+              33.163653
+            ],
+            [
+              -101.750911,
+              33.164553
+            ],
+            [
+              -101.751811,
+              33.164553
+            ],
+            [
+              -101.751811,
+              33.163653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-01932",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -102.091802,
+              33.30353
+            ],
+            [
+              -102.090902,
+              33.30353
+            ],
+            [
+              -102.090902,
+              33.30443
+            ],
+            [
+              -102.091802,
+              33.30443
+            ],
+            [
+              -102.091802,
+              33.30353
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-00285",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -102.116137,
+              33.119139
+            ],
+            [
+              -102.115237,
+              33.119139
+            ],
+            [
+              -102.115237,
+              33.120039
+            ],
+            [
+              -102.116137,
+              33.120039
+            ],
+            [
+              -102.116137,
+              33.119139
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-02508",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.48892,
+              33.483219
+            ],
+            [
+              -101.48802,
+              33.483219
+            ],
+            [
+              -101.48802,
+              33.484119
+            ],
+            [
+              -101.48892,
+              33.484119
+            ],
+            [
+              -101.48892,
+              33.483219
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-05143",
+        "wilt_class": 3,
+        "class_name": "Severe Wilt",
+        "foliar_severity": 0.82,
+        "days_to_visual_scouting": 14.0,
+        "treatment_action": "Quarantine & Canopy Sanitation",
+        "spray_rate_liters_per_ha": 140.0,
+        "prescription_notes": "Severe necrosis. Apply defoliant/biocide to prevent spore transmission to adjacent cotton rows."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.538957,
+              33.428057
+            ],
+            [
+              -101.538057,
+              33.428057
+            ],
+            [
+              -101.538057,
+              33.428957
+            ],
+            [
+              -101.538957,
+              33.428957
+            ],
+            [
+              -101.538957,
+              33.428057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-04998",
+        "wilt_class": 3,
+        "class_name": "Severe Wilt",
+        "foliar_severity": 0.82,
+        "days_to_visual_scouting": 14.0,
+        "treatment_action": "Quarantine & Canopy Sanitation",
+        "spray_rate_liters_per_ha": 140.0,
+        "prescription_notes": "Severe necrosis. Apply defoliant/biocide to prevent spore transmission to adjacent cotton rows."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.854714,
+              33.816261
+            ],
+            [
+              -101.853814,
+              33.816261
+            ],
+            [
+              -101.853814,
+              33.817161
+            ],
+            [
+              -101.854714,
+              33.817161
+            ],
+            [
+              -101.854714,
+              33.816261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-00910",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.433582,
+              33.455233
+            ],
+            [
+              -101.432682,
+              33.455233
+            ],
+            [
+              -101.432682,
+              33.456133
+            ],
+            [
+              -101.433582,
+              33.456133
+            ],
+            [
+              -101.433582,
+              33.455233
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-03344",
+        "wilt_class": 1,
+        "class_name": "Early-Stage Wilt (Pre-Visual)",
+        "foliar_severity": 0.22,
+        "days_to_visual_scouting": -12.1,
+        "treatment_action": "Targeted Early-Stage Bio-Fungicide & SAR Inducer",
+        "spray_rate_liters_per_ha": 40.0,
+        "prescription_notes": "Pre-visual wilt detected 12 days early. Apply Bacillus subtilis / potassium silicate systemic acquired resistance (SAR) agent."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.845367,
+              33.187481
+            ],
+            [
+              -101.844467,
+              33.187481
+            ],
+            [
+              -101.844467,
+              33.188381
+            ],
+            [
+              -101.845367,
+              33.188381
+            ],
+            [
+              -101.845367,
+              33.187481
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-05197",
+        "wilt_class": 3,
+        "class_name": "Severe Wilt",
+        "foliar_severity": 0.82,
+        "days_to_visual_scouting": 14.0,
+        "treatment_action": "Quarantine & Canopy Sanitation",
+        "spray_rate_liters_per_ha": 140.0,
+        "prescription_notes": "Severe necrosis. Apply defoliant/biocide to prevent spore transmission to adjacent cotton rows."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -102.12636,
+              33.238607
+            ],
+            [
+              -102.12546,
+              33.238607
+            ],
+            [
+              -102.12546,
+              33.239507
+            ],
+            [
+              -102.12636,
+              33.239507
+            ],
+            [
+              -102.12636,
+              33.238607
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-03343",
+        "wilt_class": 1,
+        "class_name": "Early-Stage Wilt (Pre-Visual)",
+        "foliar_severity": 0.22,
+        "days_to_visual_scouting": -12.1,
+        "treatment_action": "Targeted Early-Stage Bio-Fungicide & SAR Inducer",
+        "spray_rate_liters_per_ha": 40.0,
+        "prescription_notes": "Pre-visual wilt detected 12 days early. Apply Bacillus subtilis / potassium silicate systemic acquired resistance (SAR) agent."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -102.114285,
+              33.803864
+            ],
+            [
+              -102.113385,
+              33.803864
+            ],
+            [
+              -102.113385,
+              33.804764
+            ],
+            [
+              -102.114285,
+              33.804764
+            ],
+            [
+              -102.114285,
+              33.803864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-00739",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.463599,
+              33.17823
+            ],
+            [
+              -101.462699,
+              33.17823
+            ],
+            [
+              -101.462699,
+              33.17913
+            ],
+            [
+              -101.463599,
+              33.17913
+            ],
+            [
+              -101.463599,
+              33.17823
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-00950",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -102.083362,
+              33.423386
+            ],
+            [
+              -102.082462,
+              33.423386
+            ],
+            [
+              -102.082462,
+              33.424286
+            ],
+            [
+              -102.083362,
+              33.424286
+            ],
+            [
+              -102.083362,
+              33.423386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_id": "COT-FIELD-00530",
+        "wilt_class": 0,
+        "class_name": "Healthy",
+        "foliar_severity": 0.04,
+        "days_to_visual_scouting": 999.0,
+        "treatment_action": "Monitor Only",
+        "spray_rate_liters_per_ha": 0.0,
+        "prescription_notes": "Healthy canopy; maintain standard irrigation schedule."
+      }
+    }
+  ]
+}
